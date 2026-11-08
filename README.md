@@ -81,11 +81,7 @@ I'll be honest about how I got here: I shipped my first projects with AI as a pa
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=0001appiagyeisn&theme=github-dark-blue&hide_border=true&background=00000000&ring=F2B705&fire=2EA043&currStreakLabel=F2B705"/>
-    <img src="https://streak-stats.demolab.com?user=0001appiagyeisn&hide_border=true&background=00000000&ring=9A6700&fire=1A7F37&currStreakLabel=9A6700" width="49%" alt="GitHub streak"/>
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=0001appiagyeisn&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=F2B705&icon_color=2EA043&text_color=C9D1D9"/>
-    <img src="https://github-readme-stats.vercel.app/api?username=0001appiagyeisn&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=9A6700&icon_color=1A7F37&text_color=1F2328" width="49%" alt="GitHub stats"/>
+    <img src="https://streak-stats.demolab.com?user=0001appiagyeisn&hide_border=true&background=00000000&ring=9A6700&fire=1A7F37&currStreakLabel=9A6700" width="70%" alt="GitHub streak"/>
   </picture>
 </p>
 
