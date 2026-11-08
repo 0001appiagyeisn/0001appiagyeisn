@@ -33,9 +33,6 @@
       @keyframes blink { 0%,100% { opacity: .45 } 50% { opacity: 1 } }
       .cursor { animation: cur 1s steps(1) infinite; }
       @keyframes cur { 50% { opacity: 0 } }
-      .rise { animation: rise .9s ease-out both; }
-      .d1 { animation-delay: .15s } .d2 { animation-delay: .3s } .d3 { animation-delay: .45s }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
     </style>
   </defs>
 

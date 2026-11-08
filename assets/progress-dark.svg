@@ -2,8 +2,6 @@
 <style>
   .pulse { animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
   @keyframes pulse { 0%,100% { opacity: .35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.35); } }
-  .grow { animation: grow 1.4s ease-out both; transform-box: fill-box; transform-origin: left; }
-  @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 </style>
 <rect x=".5" y=".5" width="839" height="519" rx="12" fill="#0d1117" stroke="#30363d"/>
 <text x="28" y="44" font-size="22" font-weight="700" fill="#e6edf3">ML + Robotics Journey</text>
@@ -25,7 +23,7 @@
 <text x="28" y="186" font-size="13" fill="#8b949e">Overall plan</text>
 <text x="812" y="186" font-size="13" fill="#8b949e" text-anchor="end">1% · 103 weeks to go</text>
 <rect x="28" y="196" width="784" height="10" rx="5" fill="#21262d"/>
-<rect class="grow" x="28" y="196" width="10.0" height="10" rx="5" fill="#2ea043"/>
+<rect x="28" y="196" width="10.0" height="10" rx="5" fill="#2ea043"/>
 <text x="28" y="238" font-size="13" font-weight="600" fill="#e6edf3">Roadmap</text>
 <line x1="68.0" y1="262" x2="772.0" y2="262" stroke="#21262d" stroke-width="4" stroke-linecap="round"/>
 <circle class="pulse" cx="68.0" cy="262" r="13" fill="#f2b705" opacity=".35"/>
