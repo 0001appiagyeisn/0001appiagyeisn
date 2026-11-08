@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="ML + Robotics Journey: week 2 of 104">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="ML + Robotics Journey: week 3 of 104">
 <style>
   .pulse { animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
   @keyframes pulse { 0%,100% { opacity: .35; transform: scale(1); } 50% { opacity: 1; transform: scale(1.35); } }
@@ -6,14 +6,14 @@
 <rect x=".5" y=".5" width="839" height="519" rx="12" fill="#0d1117" stroke="#30363d"/>
 <text x="28" y="44" font-size="22" font-weight="700" fill="#e6edf3">ML + Robotics Journey</text>
 <text x="28" y="68" font-size="14" fill="#8b949e">Now: Python foundations + maths for ML</text>
-<text x="812" y="44" font-size="22" font-weight="700" fill="#f2b705" text-anchor="end">Week 2</text>
+<text x="812" y="44" font-size="22" font-weight="700" fill="#f2b705" text-anchor="end">Week 3</text>
 <text x="812" y="68" font-size="14" fill="#8b949e" text-anchor="end">of 104 · started Oct 2026</text>
 <rect x="28.0" y="88" width="185.5" height="70" rx="8" fill="#161b22" stroke="#30363d"/>
-<text x="44.0" y="124" font-size="26" font-weight="700" fill="#e6edf3">1</text>
+<text x="44.0" y="124" font-size="26" font-weight="700" fill="#e6edf3">2</text>
 <text x="44.0" y="144" font-size="12.5" fill="#8b949e">weeks completed</text>
 <rect x="227.5" y="88" width="185.5" height="70" rx="8" fill="#161b22" stroke="#30363d"/>
-<text x="243.5" y="124" font-size="26" font-weight="700" fill="#e6edf3">71/71</text>
-<text x="243.5" y="144" font-size="12.5" fill="#8b949e">Week 1 tasks done</text>
+<text x="243.5" y="124" font-size="26" font-weight="700" fill="#e6edf3">17 days</text>
+<text x="243.5" y="144" font-size="12.5" fill="#8b949e">study streak</text>
 <rect x="427.0" y="88" width="185.5" height="70" rx="8" fill="#161b22" stroke="#30363d"/>
 <text x="443.0" y="124" font-size="26" font-weight="700" fill="#e6edf3">23</text>
 <text x="443.0" y="144" font-size="12.5" fill="#8b949e">practice commits</text>
@@ -21,9 +21,9 @@
 <text x="642.5" y="124" font-size="26" font-weight="700" fill="#e6edf3">2/6</text>
 <text x="642.5" y="144" font-size="12.5" fill="#8b949e">roadmap stages started</text>
 <text x="28" y="186" font-size="13" fill="#8b949e">Overall plan</text>
-<text x="812" y="186" font-size="13" fill="#8b949e" text-anchor="end">1% · 103 weeks to go</text>
+<text x="812" y="186" font-size="13" fill="#8b949e" text-anchor="end">2% · 102 weeks to go</text>
 <rect x="28" y="196" width="784" height="10" rx="5" fill="#21262d"/>
-<rect x="28" y="196" width="10.0" height="10" rx="5" fill="#2ea043"/>
+<rect x="28" y="196" width="15.1" height="10" rx="5" fill="#2ea043"/>
 <text x="28" y="238" font-size="13" font-weight="600" fill="#e6edf3">Roadmap</text>
 <line x1="68.0" y1="262" x2="772.0" y2="262" stroke="#21262d" stroke-width="4" stroke-linecap="round"/>
 <circle class="pulse" cx="68.0" cy="262" r="13" fill="#f2b705" opacity=".35"/>
