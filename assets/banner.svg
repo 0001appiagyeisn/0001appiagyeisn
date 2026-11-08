@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="Kwadwo Appiagyei Gyamfi — CS student, web developer, future ML and robotics engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e22"/>
+      <stop offset=".55" stop-color="#0a3d2c"/>
+      <stop offset="1" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".45" r=".45">
+      <stop offset="0" stop-color="#f2b705" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f2b705" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+    <!-- kente-inspired band: original geometric weave in Ghana's colours -->
+    <pattern id="weave" width="96" height="22" patternUnits="userSpaceOnUse">
+      <rect width="96" height="22" fill="#111"/>
+      <rect x="0"  width="24" height="22" fill="#f2b705"/>
+      <rect x="24" width="8"  height="22" fill="#0b6b3a"/>
+      <rect x="32" width="24" height="22" fill="#c8102e"/>
+      <rect x="56" width="8"  height="22" fill="#f2b705"/>
+      <rect x="64" width="24" height="22" fill="#0b6b3a"/>
+      <rect x="88" width="8"  height="22" fill="#111"/>
+      <rect x="0"  y="9" width="96" height="4" fill="#111" opacity=".55"/>
+      <rect x="4"  y="3" width="16" height="3" fill="#111" opacity=".45"/>
+      <rect x="36" y="16" width="16" height="3" fill="#111" opacity=".45"/>
+      <rect x="68" y="3" width="16" height="3" fill="#111" opacity=".45"/>
+    </pattern>
+    <style>
+      .n   { animation: blink 3s ease-in-out infinite; }
+      .n2  { animation-delay: .5s } .n3 { animation-delay: 1s } .n4 { animation-delay: 1.5s }
+      .n5  { animation-delay: 2s }  .n6 { animation-delay: 2.5s }
+      @keyframes blink { 0%,100% { opacity: .45 } 50% { opacity: 1 } }
+      .cursor { animation: cur 1s steps(1) infinite; }
+      @keyframes cur { 50% { opacity: 0 } }
+      .rise { animation: rise .9s ease-out both; }
+      .d1 { animation-delay: .15s } .d2 { animation-delay: .3s } .d3 { animation-delay: .45s }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <g class="rise">
+    <text x="64" y="86" font-size="18" letter-spacing="4" fill="#f2b705" font-weight="600">AKWAABA · WELCOME · I'M</text>
+  </g>
+  <g class="rise d1">
+    <text x="62" y="146" font-size="52" font-weight="800" fill="#ffffff">Kwadwo Appiagyei Gyamfi</text>
+  </g>
+  <g class="rise d2">
+    <text x="64" y="188" font-size="22" fill="#cfe9dc">CS Student <tspan fill="#f2b705">·</tspan> Web Developer <tspan fill="#f2b705">·</tspan> Future ML &amp; Robotics Engineer</text>
+  </g>
+  <g class="rise d3">
+    <g transform="translate(64 214)">
+      <rect width="33" height="7" fill="#ce1126"/>
+      <rect y="7" width="33" height="7" fill="#fcd116"/>
+      <rect y="14" width="33" height="7" fill="#006b3f"/>
+      <path d="M16.5 6.2l1.25 3.85h4.05l-3.27 2.38 1.25 3.85-3.28-2.38-3.28 2.38 1.25-3.85-3.27-2.38h4.05z" fill="#000"/>
+    </g>
+    <text x="108" y="231" font-size="17" fill="#9fc4b3" font-family="'Fira Code', Consolas, monospace">learning in public · ghana<tspan class="cursor" fill="#f2b705">▌</tspan></text>
+  </g>
+
+  <g transform="translate(905 62)" stroke-linecap="round">
+    <g stroke="#9fc4b3" stroke-opacity=".28" stroke-width="1.4">
+      <path d="M0 20L110 0M0 20L110 60M0 20L110 120M0 20L110 180 M0 80L110 0M0 80L110 60M0 80L110 120M0 80L110 180 M0 140L110 0M0 140L110 60M0 140L110 120M0 140L110 180"/>
+      <path d="M110 0L220 50M110 0L220 130M110 60L220 50M110 60L220 130 M110 120L220 50M110 120L220 130M110 180L220 50M110 180L220 130"/>
+    </g>
+    <circle r="4" fill="#f2b705">
+      <animateMotion dur="2.6s" repeatCount="indefinite" path="M0 80L110 60L220 130"/>
+    </circle>
+    <circle r="3.5" fill="#7ee2a8">
+      <animateMotion dur="3.4s" begin="1s" repeatCount="indefinite" path="M0 20L110 120L220 50"/>
+    </circle>
+    <g fill="#0a3d2c" stroke-width="3">
+      <circle class="n"    cx="0"   cy="20"  r="11" stroke="#7ee2a8"/>
+      <circle class="n n2" cx="0"   cy="80"  r="11" stroke="#7ee2a8"/>
+      <circle class="n n3" cx="0"   cy="140" r="11" stroke="#7ee2a8"/>
+      <circle class="n n4" cx="110" cy="0"   r="11" stroke="#f2b705"/>
+      <circle class="n n5" cx="110" cy="60"  r="11" stroke="#f2b705"/>
+      <circle class="n n6" cx="110" cy="120" r="11" stroke="#f2b705"/>
+      <circle class="n"    cx="110" cy="180" r="11" stroke="#f2b705"/>
+      <circle class="n n3" cx="220" cy="50"  r="13" stroke="#ffffff"/>
+      <circle class="n n5" cx="220" cy="130" r="13" stroke="#ffffff"/>
+    </g>
+  </g>
+
+  <rect y="278" width="1200" height="22" fill="url(#weave)"/>
+</svg>
