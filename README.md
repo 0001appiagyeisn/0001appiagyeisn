@@ -35,7 +35,12 @@ I'll be honest about how I got here: I shipped my first projects with AI as a pa
 
 #### 📓 Learning log: latest practice commits
 <!--LOG:START-->
-_The log fills in automatically once the Action runs._
+- `2026-11-08` · [Statistics Maths](https://github.com/0001appiagyeisn/ml-journey/commit/2785df17e6e8f31cb73634f27ead61abd31d93f4) <sub>in ml-journey</sub>
+- `2026-11-06` · [Day05:Nested loops](https://github.com/0001appiagyeisn/ml-journey/commit/5e198021dbfcd6ba6a0214e4a19b5bf006f237ab) <sub>in ml-journey</sub>
+- `2026-11-04` · [week02 statistics](https://github.com/0001appiagyeisn/ml-journey/commit/353e8e8c5fdde15b1e9dd66983a98bc75e55bf16) <sub>in ml-journey</sub>
+- `2026-11-01` · [Day 4: dictionaries](https://github.com/0001appiagyeisn/ml-journey/commit/eb5d38b70272c0853f7d0f0506ad38d33c7e960c) <sub>in ml-journey</sub>
+- `2026-10-28` · [Maths Day3: Median and Range(myself)](https://github.com/0001appiagyeisn/ml-journey/commit/d4611d50d0c53f117fc8fdf045b3f7a334bd24a6) <sub>in ml-journey</sub>
+- `2026-10-28` · [Day 3: functions(yes/no, splliting) and match](https://github.com/0001appiagyeisn/ml-journey/commit/4c4c30ae7b1421e398ee2739f47862b8b2924323) <sub>in ml-journey</sub>
 <!--LOG:END-->
 
 ## 🛠️ Tech stack
@@ -84,6 +89,7 @@ _The log fills in automatically once the Action runs._
   </picture>
 </p>
 
+<!-- 3D calendar + snake: drawn by the daily Action. They switch on once GitHub Actions runs on this account.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-green.svg"/>
   <img src="profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D contribution calendar"/>
@@ -93,6 +99,7 @@ _The log fills in automatically once the Action runs._
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0001appiagyeisn/0001appiagyeisn/output/github-snake-dark.svg"/>
   <img src="https://raw.githubusercontent.com/0001appiagyeisn/0001appiagyeisn/output/github-snake.svg" width="100%" alt="Snake eating my contribution graph"/>
 </picture>
+-->
 
 ## 🤝 Let's connect
 
