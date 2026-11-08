@@ -115,7 +115,7 @@ def card_svg(cfg, facts, theme):
     add(f'<text x="{W-28}" y="68" font-size="14" fill="{t["muted"]}" text-anchor="end">of {total} · started {escape(j.get("started", ""))}</text>')
 
     # Stat tiles
-    tiles = [(str(done), "weeks completed"), (str(j.get("week1_tasks", "")), "Week 1 tasks done"),
+    tiles = [(str(done), "weeks completed"), (f'{j.get("streak_days", 0)} days', "study streak"),
              (str(commits), "practice commits"), (str(sum(1 for s in stages if s.get("status") in ("done", "now"))) + f"/{len(stages)}", "roadmap stages started")]
     tw, gap, y0 = (W - 56 - 3 * 14) / 4, 14, 88
     for i, (val, label) in enumerate(tiles):
