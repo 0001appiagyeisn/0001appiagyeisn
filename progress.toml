@@ -1,0 +1,82 @@
+# ─────────────────────────────────────────────────────────────
+#  progress.toml — the ONLY file you need to edit to update
+#  the progress card on your GitHub profile.
+#
+#  Edit it on github.com (pencil icon), commit, and the
+#  "Update profile" Action redraws the card in about a minute.
+# ─────────────────────────────────────────────────────────────
+
+[journey]
+title = "ML + Robotics Journey"
+started = "Oct 2026"
+plan_weeks = 104            # 2-year plan
+weeks_completed = 1         # bump this when you finish a week
+current_week = 2            # auto-detected from weekNN folders in ml-journey (this is the fallback)
+week1_tasks = "71/71"       # shown as a highlight tile — change the label/value any time
+focus = "Python foundations + maths for ML"
+
+# Where your practice code lives. Commits here feed the Learning Log
+# and the "practice commits" tile automatically.
+practice_repo = "ml-journey"
+
+# Stages of the roadmap. status = "done" | "now" | "next" | "later"
+[[stages]]
+name = "Python basics"
+status = "now"
+
+[[stages]]
+name = "Maths for ML"
+status = "now"
+
+[[stages]]
+name = "NumPy + pandas"
+status = "next"
+
+[[stages]]
+name = "Classic ML"
+status = "later"
+
+[[stages]]
+name = "Deep learning"
+status = "later"
+
+[[stages]]
+name = "Robotics (sim)"
+status = "later"
+
+# Self-rated skill levels, 1 (just started) to 5 (could teach it).
+# Be honest — watching these climb IS the point.
+[[skills]]
+name = "HTML"
+level = 4
+
+[[skills]]
+name = "CSS"
+level = 4
+
+[[skills]]
+name = "Python"
+level = 2
+
+[[skills]]
+name = "JavaScript"
+level = 2
+
+[[skills]]
+name = "Git + GitHub"
+level = 2
+
+[[skills]]
+name = "SQL / Supabase"
+level = 2
+
+[[skills]]
+name = "C++"
+level = 1
+
+[[skills]]
+name = "Maths for ML"
+level = 1
+
+[log]
+max_items = 6
