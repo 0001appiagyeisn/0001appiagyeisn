@@ -10,9 +10,9 @@
 title = "ML + Robotics Journey"
 started = "Oct 2026"
 plan_weeks = 104            # 2-year plan
-weeks_completed = 1         # bump this when you finish a week
-current_week = 2            # auto-detected from weekNN folders in ml-journey (this is the fallback)
-week1_tasks = "71/71"       # shown as a highlight tile — change the label/value any time
+weeks_completed = 2         # bump this when you finish a week
+current_week = 3            # auto-detected from weekNN folders in ml-journey (this is the fallback)
+streak_days = 17            # study streak from the ML Journey app — update it when you like
 focus = "Python foundations + maths for ML"
 
 # Where your practice code lives. Commits here feed the Learning Log

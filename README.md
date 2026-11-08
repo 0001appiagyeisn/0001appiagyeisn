@@ -15,7 +15,7 @@
 
 I'm a **Computer Science student at Koforidua Technical University** 🇬🇭 who started freelancing as a web developer in 2026, building sites for real businesses in Kumasi.
 
-I'll be honest about how I got here: I shipped my first projects with AI as a pair-programmer. Now I'm going back to the foundations, **writing and understanding every line myself**, on a 2-year plan towards a **master's in Machine Learning & Robotics**. This profile tracks that journey, and it updates itself every time I push practice code.
+I learn by building. Real client projects showed me how much I enjoy solving practical problems with code, so now I'm going deep on the fundamentals (Python, maths, algorithms) on a 2-year plan towards a **master's in Machine Learning & Robotics**. This profile tracks that journey week by week.
 
 - 🎓 **Studying:** C++, algorithms, probability & statistics, numerical methods (MATLAB), computer architecture
 - 🤖 **Self-study:** Python + maths for ML → data tools → ML → deep learning → robotics in simulation
@@ -70,6 +70,8 @@ I'll be honest about how I got here: I shipped my first projects with AI as a pa
 - [x] Ship my first client website
 - [x] Take live Mobile Money/card payments on a real store
 - [x] Finish ML Journey Week 1 (71/71 tasks)
+- [x] Finish ML Journey Week 2
+- [x] Hit a 17-day study streak
 - [ ] Push practice code on every study day
 - [ ] Finish the Python + maths foundations
 - [ ] Train my first ML model on a Ghanaian dataset (agriculture or health)
