@@ -1,7 +1,7 @@
 <img src="assets/banner.svg" width="100%" alt="Kwadwo Appiagyei Gyamfi — CS student, web developer, future ML and robotics engineer"/>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1100&color=F2B705&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Kwadwo+%F0%9F%91%8B;Level+200+Computer+Science+%40+KTU%2C+Ghana;Freelance+web+dev%3A+real+clients%2C+real+payments;Learning+ML+%2B+Robotics%2C+one+week+at+a+time;Building+in+public+%F0%9F%9A%80" alt="Typing intro"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1100&color=F2B705&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Kwadwo+%F0%9F%91%8B;Level+200+Computer+Science+%40+KTU%2C+Ghana;Freelance+web+dev%3A+real+clients%2C+real+payments;Learning+ML+%2B+Robotics%2C+one+day+at+a+time;Building+in+public+%F0%9F%9A%80" alt="Typing intro"/></a>
 </p>
 
 <p align="center">
@@ -15,14 +15,14 @@
 
 I'm a **Computer Science student at Koforidua Technical University** 🇬🇭 who started freelancing as a web developer in 2026, building sites for real businesses in Kumasi.
 
-I learn by building. Real client projects showed me how much I enjoy solving practical problems with code, so now I'm going deep on the fundamentals (Python, maths, algorithms) on a 2-year plan towards a **master's in Machine Learning & Robotics**. This profile tracks that journey week by week.
+I learn by building. Real client projects showed me how much I enjoy solving practical problems with code, so now I'm going deep on the fundamentals (Python, maths, algorithms) on a 2-year plan towards a **master's in Machine Learning & Robotics**. I learn something new **every day**, and this profile tracks that journey one day at a time.
 
 - 🎓 **Studying:** C++, algorithms, probability & statistics, numerical methods (MATLAB), computer architecture
 - 🤖 **Self-study:** Python + maths for ML → data tools → ML → deep learning → robotics in simulation
 - 💼 **Freelance:** e-commerce and ordering sites for small businesses, with Mobile Money/card payments
 - 🧑‍🏫 **Community:** I run **Study Squad**, a peer study group with cybersecurity, AI/ML and software-engineering tracks, and teach the members Git
 - 🌍 **Want to build:** tech for health, agriculture, education and business in Ghana
-- 🎹 **Off-screen:** I play the keyboard
+- 🎹 **Off-screen:** I play the keyboard and chess ♟️
 
 ## 📈 Learning in public
 
