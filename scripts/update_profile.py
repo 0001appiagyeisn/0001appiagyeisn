@@ -105,8 +105,6 @@ def card_svg(cfg, facts, theme):
     add(f"""<style>
   .pulse {{ animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }}
   @keyframes pulse {{ 0%,100% {{ opacity: .35; transform: scale(1); }} 50% {{ opacity: 1; transform: scale(1.35); }} }}
-  .grow {{ animation: grow 1.4s ease-out both; transform-box: fill-box; transform-origin: left; }}
-  @keyframes grow {{ from {{ transform: scaleX(0); }} to {{ transform: scaleX(1); }} }}
 </style>""")
     add(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}"/>')
 
@@ -131,7 +129,7 @@ def card_svg(cfg, facts, theme):
     add(f'<text x="28" y="{by}" font-size="13" fill="{t["muted"]}">Overall plan</text>')
     add(f'<text x="{W-28}" y="{by}" font-size="13" fill="{t["muted"]}" text-anchor="end">{pct*100:.0f}% · {total-done} weeks to go</text>')
     add(f'<rect x="28" y="{by+10}" width="{W-56}" height="10" rx="5" fill="{t["track"]}"/>')
-    add(f'<rect class="grow" x="28" y="{by+10}" width="{max(10, (W-56)*pct):.1f}" height="10" rx="5" fill="{t["green"]}"/>')
+    add(f'<rect x="28" y="{by+10}" width="{max(10, (W-56)*pct):.1f}" height="10" rx="5" fill="{t["green"]}"/>')
 
     # Roadmap timeline
     ty = 262
