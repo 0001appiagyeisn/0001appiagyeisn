@@ -20,7 +20,7 @@ I learn by building. Real client projects showed me how much I enjoy solving pra
 - 🎓 **Studying:** C++, algorithms, probability & statistics, numerical methods (MATLAB), computer architecture
 - 🤖 **Self-study:** Python + maths for ML → data tools → ML → deep learning → robotics in simulation
 - 💼 **Freelance:** e-commerce and ordering sites for small businesses, with Mobile Money/card payments
-- 🧑‍🏫 **Community:** I run **Study Squad**, a peer study group with cybersecurity, AI/ML and software-engineering tracks, and teach the members Git
+- 🧑‍🏫 **Community:** I run **Study Squad**, a peer study group with cybersecurity, AI/ML and software-engineering tracks
 - 🌍 **Want to build:** tech for health, agriculture, education and business in Ghana
 - 🎹 **Off-screen:** I play the keyboard and chess ♟️
 
