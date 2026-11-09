@@ -1,87 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="Kwadwo Appiagyei Gyamfi — CS student, web developer, future ML and robotics engineer">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#052e22"/>
-      <stop offset=".55" stop-color="#0a3d2c"/>
-      <stop offset="1" stop-color="#0d1b2a"/>
-    </linearGradient>
-    <radialGradient id="glow" cx=".82" cy=".45" r=".45">
-      <stop offset="0" stop-color="#f2b705" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#f2b705" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
-    </pattern>
-    <!-- kente-inspired band: original geometric weave in Ghana's colours -->
-    <pattern id="weave" width="96" height="22" patternUnits="userSpaceOnUse">
-      <rect width="96" height="22" fill="#111"/>
-      <rect x="0"  width="24" height="22" fill="#f2b705"/>
-      <rect x="24" width="8"  height="22" fill="#0b6b3a"/>
-      <rect x="32" width="24" height="22" fill="#c8102e"/>
-      <rect x="56" width="8"  height="22" fill="#f2b705"/>
-      <rect x="64" width="24" height="22" fill="#0b6b3a"/>
-      <rect x="88" width="8"  height="22" fill="#111"/>
-      <rect x="0"  y="9" width="96" height="4" fill="#111" opacity=".55"/>
-      <rect x="4"  y="3" width="16" height="3" fill="#111" opacity=".45"/>
-      <rect x="36" y="16" width="16" height="3" fill="#111" opacity=".45"/>
-      <rect x="68" y="3" width="16" height="3" fill="#111" opacity=".45"/>
-    </pattern>
-    <style>
-      .n   { animation: blink 3s ease-in-out infinite; }
-      .n2  { animation-delay: .5s } .n3 { animation-delay: 1s } .n4 { animation-delay: 1.5s }
-      .n5  { animation-delay: 2s }  .n6 { animation-delay: 2.5s }
-      @keyframes blink { 0%,100% { opacity: .45 } 50% { opacity: 1 } }
-      .cursor { animation: cur 1s steps(1) infinite; }
-      @keyframes cur { 50% { opacity: 0 } }
-    </style>
-  </defs>
-
-  <rect width="1200" height="300" fill="url(#bg)"/>
-  <rect width="1200" height="300" fill="url(#grid)"/>
-  <rect width="1200" height="300" fill="url(#glow)"/>
-
-  <g class="rise">
-    <text x="64" y="86" font-size="18" letter-spacing="4" fill="#f2b705" font-weight="600">AKWAABA · WELCOME · I'M</text>
-  </g>
-  <g class="rise d1">
-    <text x="62" y="146" font-size="52" font-weight="800" fill="#ffffff">Kwadwo Appiagyei Gyamfi</text>
-  </g>
-  <g class="rise d2">
-    <text x="64" y="188" font-size="22" fill="#cfe9dc">CS Student <tspan fill="#f2b705">·</tspan> Web Developer <tspan fill="#f2b705">·</tspan> Future ML &amp; Robotics Engineer</text>
-  </g>
-  <g class="rise d3">
-    <g transform="translate(64 214)">
-      <rect width="33" height="7" fill="#ce1126"/>
-      <rect y="7" width="33" height="7" fill="#fcd116"/>
-      <rect y="14" width="33" height="7" fill="#006b3f"/>
-      <path d="M16.5 6.2l1.25 3.85h4.05l-3.27 2.38 1.25 3.85-3.28-2.38-3.28 2.38 1.25-3.85-3.27-2.38h4.05z" fill="#000"/>
-    </g>
-    <text x="108" y="231" font-size="17" fill="#9fc4b3" font-family="'Fira Code', Consolas, monospace">learning in public · ghana<tspan class="cursor" fill="#f2b705">▌</tspan></text>
-  </g>
-
-  <g transform="translate(905 62)" stroke-linecap="round">
-    <g stroke="#9fc4b3" stroke-opacity=".28" stroke-width="1.4">
-      <path d="M0 20L110 0M0 20L110 60M0 20L110 120M0 20L110 180 M0 80L110 0M0 80L110 60M0 80L110 120M0 80L110 180 M0 140L110 0M0 140L110 60M0 140L110 120M0 140L110 180"/>
-      <path d="M110 0L220 50M110 0L220 130M110 60L220 50M110 60L220 130 M110 120L220 50M110 120L220 130M110 180L220 50M110 180L220 130"/>
-    </g>
-    <circle r="4" fill="#f2b705">
-      <animateMotion dur="2.6s" repeatCount="indefinite" path="M0 80L110 60L220 130"/>
-    </circle>
-    <circle r="3.5" fill="#7ee2a8">
-      <animateMotion dur="3.4s" begin="1s" repeatCount="indefinite" path="M0 20L110 120L220 50"/>
-    </circle>
-    <g fill="#0a3d2c" stroke-width="3">
-      <circle class="n"    cx="0"   cy="20"  r="11" stroke="#7ee2a8"/>
-      <circle class="n n2" cx="0"   cy="80"  r="11" stroke="#7ee2a8"/>
-      <circle class="n n3" cx="0"   cy="140" r="11" stroke="#7ee2a8"/>
-      <circle class="n n4" cx="110" cy="0"   r="11" stroke="#f2b705"/>
-      <circle class="n n5" cx="110" cy="60"  r="11" stroke="#f2b705"/>
-      <circle class="n n6" cx="110" cy="120" r="11" stroke="#f2b705"/>
-      <circle class="n"    cx="110" cy="180" r="11" stroke="#f2b705"/>
-      <circle class="n n3" cx="220" cy="50"  r="13" stroke="#ffffff"/>
-      <circle class="n n5" cx="220" cy="130" r="13" stroke="#ffffff"/>
-    </g>
-  </g>
-
-  <rect y="278" width="1200" height="22" fill="url(#weave)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="Kwadwo Appiagyei Gyamfi — CS student, web developer, future ML and robotics engineer">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041f17"/><stop offset="1" stop-color="#0d1b2a"/></linearGradient>
+  <radialGradient id="glow" cx=".78" cy=".5" r=".55"><stop offset="0" stop-color="#f2b705" stop-opacity=".22"/><stop offset="1" stop-color="#f2b705" stop-opacity="0"/></radialGradient>
+  <linearGradient id="veil" x1="0" x2="1"><stop offset="0" stop-color="#041f17" stop-opacity=".92"/><stop offset=".5" stop-color="#041f17" stop-opacity=".55"/><stop offset=".75" stop-color="#041f17" stop-opacity="0"/></linearGradient>
+  <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#7ee2a8"/><stop offset="1" stop-color="#f2b705"/></linearGradient>
+  <style>
+    .tw { animation: tw 3.2s ease-in-out infinite; }
+    @keyframes tw { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+    .d0 { animation-delay: 0.00s } .d1 { animation-delay: 0.35s } .d2 { animation-delay: 0.70s } .d3 { animation-delay: 1.05s } .d4 { animation-delay: 1.40s } .d5 { animation-delay: 1.75s } .d6 { animation-delay: 2.10s } .d7 { animation-delay: 2.45s } .d8 { animation-delay: 2.80s }
+    .cur { animation: cur 1s steps(1) infinite; }
+    @keyframes cur { 50% { opacity: 0 } }
+  </style>
+</defs>
+<rect width="1200" height="320" fill="url(#bg)"/><rect width="1200" height="320" fill="url(#glow)"/>
+<path d="M392 55L477 130M392 55L504 49M392 55L294 32M273 198L346 126M273 198L179 275M273 198L163 137M273 198L321 299M273 198L245 303M691 129L758 29M691 129L673 238M691 129L608 216M691 129L680 14M691 129L779 71M1162 24L1038 34M1162 24L1182 150M1162 24L1137 119M1162 24L1074 97M1023 97L1137 119M1023 97L935 42M1023 97L1096 204M1023 97L1133 159M1023 97L1148 72M1023 97L1123 17M1023 97L1009 209M973 64L865 61M973 64L1077 136M973 64L862 16M973 64L1074 97M696 202L786 115M696 202L671 85M696 202L817 240M696 202L738 89M80 72L42 168M80 72L163 137M545 100L446 180M545 100L440 47M545 100L657 49M545 100L671 85M545 100L639 153M835 83L912 182M835 83L830 188M835 83L929 109M835 83L935 42M835 83L733 162M835 83L875 175M1043 229L933 235M1043 229L1077 136M1043 229L935 279M1043 229L1144 221M1043 229L1133 159M587 22L671 85M912 182L865 61M912 182L835 273M912 182L935 279M912 182L817 240M912 182L1009 209M830 188L929 109M830 188L933 235M830 188L733 162M830 188L887 101M830 188L795 295M830 188L875 309M830 188L779 71M1001 293L875 309M1001 293L1053 183M1182 257L1182 150M1182 257L1096 204M1182 257L1133 159M346 126L446 180M346 126L440 47M346 126L294 32M346 126L234 152M346 126L348 25M346 126L361 232M148 28L163 137M148 28L36 20M1038 34L1002 154M1038 34L1077 136M1038 34L935 42M1038 34L1148 72M540 175L538 291M540 175L574 64M540 175L639 153M540 175L609 79M1053 297L976 232M1053 297L935 279M1053 297L1096 204M1053 297L1144 221M1053 297L1009 209M1053 297L1053 183M446 180L451 297M446 180L361 232M739 213L786 115M739 213L639 153M739 213L835 273M739 213L670 293M739 213L795 295M739 213L738 89M739 213L848 144M74 280L42 168M74 280L179 275M758 29L865 61M758 29L657 49M758 29L671 85M758 29L862 16M440 47L327 73M1182 150L1077 136M1182 150L1074 97M1182 150L1096 204M414 89L504 49M200 17L163 137M42 168L163 137M929 109L933 235M929 109L862 16M929 109L1009 209M273 253L402 250M273 253L234 152M273 253L286 153M976 232L875 175M976 232L1096 204M976 232L875 309M316 218L192 225M316 218L234 152M316 218L245 303M316 218L387 119M538 291L608 216M1137 119L1144 221M1137 119L1123 17M1137 119L1053 183M1002 154L933 235M1002 154L875 175M1002 154L887 101M1002 154L1096 204M781 250L673 238M781 250L733 162M781 250L670 293M781 250L875 175M781 250L875 309M781 250L848 144M110 208L12 235M933 235L835 273M933 235L817 240M933 235L848 144M574 64L477 130M574 64L671 85M574 64L639 153M574 64L680 14M477 130L495 254M865 61L875 175M786 115L671 85M786 115L862 16M786 115L875 175M786 115L817 240M786 115L887 101M657 49L639 153M657 49L779 71M504 49L609 79M1077 136L1144 221M1077 136L1123 17M1077 136L1009 209M671 85L733 162M671 85L779 71M673 238L585 307M733 162L817 240M733 162L848 144M733 162L779 71M639 153L738 89M835 273L935 279M835 273L875 175M835 273L848 144M670 293L608 216M670 293L795 295M294 32L286 153M294 32L387 119M935 279L875 175M935 279L817 240M935 279L1009 209M192 225L286 153M585 307L495 254M862 16L848 144M862 16L779 71M163 137L286 153M234 152L327 73M608 216L495 254M321 299L451 297M817 240L848 144M887 101L779 71M680 14L779 71M12 235L23 108M1074 97L1096 204M1074 97L1009 209M1114 85L1096 204M1114 85L1053 183M451 297L361 232M348 25L387 119M361 232L286 153M361 232L387 119M1144 221L1053 183M738 89L848 144M738 89L609 79M286 153L387 119M848 144L779 71" stroke="#9fc4b3" stroke-opacity="0.07" fill="none"/>
+<path d="M392 55L346 126M392 55L327 73M273 198L192 225M273 198L361 232M691 129L696 202M691 129L739 213M691 129L786 115M691 129L657 49M691 129L609 79M1162 24L1114 85M1023 97L929 109M1023 97L1077 136M1023 97L1114 85M1023 97L1053 183M973 64L1038 34M973 64L1002 154M973 64L887 101M696 202L781 250M696 202L639 153M696 202L670 293M696 202L608 216M80 72L148 28M80 72L36 20M80 72L23 108M545 100L587 22M545 100L540 175M545 100L477 130M545 100L609 79M835 83L758 29M835 83L862 16M835 83L738 89M1043 229L1001 293M1043 229L1053 297M1043 229L976 232M1043 229L1002 154M587 22L657 49M587 22L504 49M587 22L680 14M912 182L830 188M912 182L929 109M912 182L976 232M912 182L1002 154M912 182L887 101M912 182L848 144M830 188L739 213M830 188L781 250M830 188L786 115M830 188L835 273M1001 293L976 232M1001 293L933 235M1001 293L935 279M1001 293L1009 209M346 126L414 89M346 126L316 218M346 126L286 153M1038 34L1074 97M1038 34L1114 85M1038 34L1123 17M540 175L446 180M540 175L477 130M540 175L608 216M540 175L495 254M446 180L414 89M446 180L402 250M446 180L495 254M446 180L387 119M739 213L673 238M739 213L817 240M74 280L110 208M74 280L12 235M758 29L786 115M758 29L680 14M440 47L477 130M440 47L348 25M440 47L387 119M1182 150L1114 85M1182 150L1144 221M1182 150L1148 72M414 89L477 130M414 89L327 73M414 89L348 25M200 17L294 32M42 168L110 208M42 168L12 235M929 109L1002 154M929 109L865 61M929 109L935 42M929 109L875 175M929 109L848 144M273 253L192 225M273 253L179 275M273 253L321 299M273 253L361 232M976 232L1002 154M976 232L1053 183M316 218L402 250M316 218L321 299M316 218L286 153M538 291L451 297M1137 119L1074 97M1137 119L1096 204M1002 154L1077 136M1002 154L1074 97M110 208L192 225M110 208L179 275M110 208L163 137M933 235L875 175M933 235L875 309M933 235L1009 209M574 64L657 49M574 64L504 49M402 250L321 299M402 250L451 297M402 250L495 254M477 130L504 49M477 130L387 119M865 61L786 115M865 61L935 42M865 61L848 144M865 61L779 71M786 115L733 162M786 115L848 144M657 49L738 89M1077 136L1096 204M1077 136L1148 72M935 42L862 16M935 42L887 101M671 85L639 153M671 85L680 14M671 85L738 89M673 238L733 162M673 238L639 153M673 238L608 216M733 162L639 153M733 162L738 89M639 153L608 216M639 153L609 79M670 293L585 307M935 279L875 309M192 225L163 137M192 225L234 152M192 225L245 303M179 275L245 303M585 307L608 216M862 16L887 101M163 137L234 152M875 175L817 240M875 175L887 101M321 299L245 303M321 299L361 232M817 240L875 309M680 14L738 89M680 14L609 79M327 73L286 153M327 73L387 119M1074 97L1133 159M1074 97L1148 72M1074 97L1123 17M1074 97L1053 183M1114 85L1133 159M1114 85L1123 17M36 20L23 108M1096 204L1009 209M1133 159L1148 72M1133 159L1053 183M795 295L875 309" stroke="#9fc4b3" stroke-opacity="0.19" fill="none"/>
+<path d="M392 55L440 47M392 55L414 89M392 55L348 25M392 55L387 119M273 198L273 253M273 198L316 218M273 198L234 152M273 198L286 153M691 129L671 85M691 129L733 162M691 129L639 153M691 129L738 89M1162 24L1148 72M1162 24L1123 17M1023 97L973 64M1023 97L1038 34M1023 97L1002 154M1023 97L1074 97M973 64L929 109M973 64L935 42M696 202L739 213M696 202L673 238M696 202L733 162M545 100L574 64M545 100L504 49M835 83L865 61M835 83L786 115M835 83L887 101M835 83L848 144M835 83L779 71M1043 229L1096 204M1043 229L1009 209M1043 229L1053 183M587 22L574 64M587 22L609 79M912 182L933 235M912 182L875 175M830 188L875 175M830 188L817 240M830 188L848 144M1001 293L1053 297M1182 257L1144 221M346 126L327 73M346 126L387 119M148 28L200 17M446 180L477 130M739 213L781 250M739 213L733 162M758 29L738 89M758 29L779 71M440 47L414 89M440 47L504 49M1182 150L1137 119M1182 150L1133 159M414 89L387 119M42 168L23 108M929 109L887 101M273 253L316 218M273 253L245 303M976 232L933 235M976 232L935 279M976 232L1009 209M316 218L361 232M538 291L585 307M538 291L495 254M1137 119L1077 136M1137 119L1114 85M1137 119L1133 159M1137 119L1148 72M1002 154L1009 209M1002 154L1053 183M781 250L835 273M781 250L817 240M781 250L795 295M933 235L935 279M574 64L609 79M402 250L361 232M865 61L862 16M865 61L887 101M786 115L738 89M786 115L779 71M657 49L671 85M657 49L680 14M657 49L609 79M1077 136L1074 97M1077 136L1114 85M1077 136L1133 159M1077 136L1053 183M671 85L609 79M673 238L670 293M835 273L817 240M835 273L795 295M835 273L875 309M294 32L327 73M294 32L348 25M192 225L179 275M875 175L848 144M234 152L286 153M817 240L795 295M887 101L848 144M327 73L348 25M1074 97L1114 85M1114 85L1148 72M451 297L495 254M1096 204L1144 221M1096 204L1133 159M1096 204L1053 183M1144 221L1133 159M1148 72L1123 17M738 89L779 71M1009 209L1053 183" stroke="#9fc4b3" stroke-opacity="0.31" fill="none"/>
+<circle r="2.8" fill="#f2b705"><animateMotion dur="2.40s" begin="0.0s" repeatCount="indefinite" path="M912 182 L1009 209 L935 279 L933 235 L830 188"/></circle>
+<circle r="2.8" fill="#7ee2a8"><animateMotion dur="2.85s" begin="0.6s" repeatCount="indefinite" path="M830 188 L887 101 L973 64 L862 16 L779 71"/></circle>
+<circle r="2.8" fill="#f2b705"><animateMotion dur="3.30s" begin="1.2s" repeatCount="indefinite" path="M1023 97 L1148 72 L1114 85 L1038 34 L1123 17"/></circle>
+<circle r="2.8" fill="#7ee2a8"><animateMotion dur="3.75s" begin="1.8s" repeatCount="indefinite" path="M781 250 L848 144 L929 109 L875 175 L835 273"/></circle>
+<circle r="2.8" fill="#f2b705"><animateMotion dur="4.20s" begin="2.4s" repeatCount="indefinite" path="M696 202 L781 250 L848 144 L933 235 L1002 154"/></circle>
+<circle r="2.8" fill="#7ee2a8"><animateMotion dur="4.65s" begin="3.0s" repeatCount="indefinite" path="M739 213 L835 273 L817 240 L933 235 L848 144"/></circle>
+<circle r="2.8" fill="#f2b705"><animateMotion dur="5.10s" begin="3.6s" repeatCount="indefinite" path="M1182 150 L1144 221 L1133 159 L1023 97 L1002 154"/></circle>
+<circle class="tw d0" cx="392" cy="55" r="2.2" fill="#f2b705"/>
+<circle class="tw d1" cx="273" cy="198" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d2" cx="691" cy="129" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d3" cx="1162" cy="24" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d4" cx="1023" cy="97" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d5" cx="973" cy="64" r="3.1" fill="#f2b705"/>
+<circle class="tw d6" cx="696" cy="202" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d7" cx="80" cy="72" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d8" cx="545" cy="100" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d0" cx="835" cy="83" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d1" cx="1043" cy="229" r="4.0" fill="#f2b705"/>
+<circle class="tw d2" cx="587" cy="22" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d3" cx="912" cy="182" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d4" cx="830" cy="188" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d5" cx="1001" cy="293" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d6" cx="1182" cy="257" r="4.9" fill="#f2b705"/>
+<circle class="tw d7" cx="346" cy="126" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d8" cx="148" cy="28" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d0" cx="1038" cy="34" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d1" cx="540" cy="175" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d2" cx="1053" cy="297" r="2.2" fill="#f2b705"/>
+<circle class="tw d3" cx="446" cy="180" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d4" cx="739" cy="213" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d5" cx="74" cy="280" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d6" cx="758" cy="29" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d7" cx="440" cy="47" r="3.1" fill="#f2b705"/>
+<circle class="tw d8" cx="1182" cy="150" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d0" cx="414" cy="89" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d1" cx="200" cy="17" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d2" cx="42" cy="168" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d3" cx="929" cy="109" r="4.0" fill="#f2b705"/>
+<circle class="tw d4" cx="273" cy="253" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d5" cx="976" cy="232" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d6" cx="316" cy="218" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d7" cx="538" cy="291" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d8" cx="1137" cy="119" r="4.9" fill="#f2b705"/>
+<circle class="tw d0" cx="1002" cy="154" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d1" cx="781" cy="250" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d2" cx="110" cy="208" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d3" cx="933" cy="235" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d4" cx="574" cy="64" r="2.2" fill="#f2b705"/>
+<circle class="tw d5" cx="402" cy="250" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d6" cx="477" cy="130" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d7" cx="865" cy="61" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d8" cx="786" cy="115" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d0" cx="657" cy="49" r="3.1" fill="#f2b705"/>
+<circle class="tw d1" cx="504" cy="49" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d2" cx="1077" cy="136" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d3" cx="935" cy="42" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d4" cx="671" cy="85" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d5" cx="673" cy="238" r="4.0" fill="#f2b705"/>
+<circle class="tw d6" cx="733" cy="162" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d7" cx="639" cy="153" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d8" cx="835" cy="273" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d0" cx="670" cy="293" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d1" cx="294" cy="32" r="4.9" fill="#f2b705"/>
+<circle class="tw d2" cx="935" cy="279" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d3" cx="192" cy="225" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d4" cx="179" cy="275" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d5" cx="585" cy="307" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d6" cx="862" cy="16" r="2.2" fill="#f2b705"/>
+<circle class="tw d7" cx="163" cy="137" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d8" cx="875" cy="175" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d0" cx="234" cy="152" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d1" cx="608" cy="216" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d2" cx="321" cy="299" r="3.1" fill="#f2b705"/>
+<circle class="tw d3" cx="817" cy="240" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d4" cx="887" cy="101" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d5" cx="680" cy="14" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d6" cx="245" cy="303" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d7" cx="327" cy="73" r="4.0" fill="#f2b705"/>
+<circle class="tw d8" cx="12" cy="235" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d0" cx="1074" cy="97" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d1" cx="1114" cy="85" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d2" cx="451" cy="297" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d3" cx="348" cy="25" r="4.9" fill="#f2b705"/>
+<circle class="tw d4" cx="361" cy="232" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d5" cx="36" cy="20" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d6" cx="1096" cy="204" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d7" cx="1144" cy="221" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d8" cx="1133" cy="159" r="2.2" fill="#f2b705"/>
+<circle class="tw d0" cx="795" cy="295" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d1" cx="875" cy="309" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d2" cx="1148" cy="72" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d3" cx="495" cy="254" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d4" cx="738" cy="89" r="3.1" fill="#f2b705"/>
+<circle class="tw d5" cx="1123" cy="17" r="4.0" fill="#7ee2a8"/>
+<circle class="tw d6" cx="286" cy="153" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d7" cx="387" cy="119" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d8" cx="848" cy="144" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d0" cx="1009" cy="209" r="4.0" fill="#f2b705"/>
+<circle class="tw d1" cx="1053" cy="183" r="4.9" fill="#7ee2a8"/>
+<circle class="tw d2" cx="609" cy="79" r="2.2" fill="#7ee2a8"/>
+<circle class="tw d3" cx="779" cy="71" r="3.1" fill="#7ee2a8"/>
+<circle class="tw d4" cx="23" cy="108" r="4.0" fill="#7ee2a8"/>
+<rect width="1200" height="320" fill="url(#veil)"/>
+<text x="64" y="92" font-size="16" letter-spacing="5" fill="#f2b705" font-weight="700">AKWAABA · WELCOME · I'M</text>
+<text x="62" y="152" font-size="54" font-weight="800" fill="#ffffff">Kwadwo Appiagyei Gyamfi</text>
+<rect x="64" y="170" width="120" height="4" rx="2" fill="url(#bar)"/>
+<text x="64" y="212" font-size="22" fill="#cfe9dc">CS Student <tspan fill="#f2b705">/</tspan> Web Developer <tspan fill="#f2b705">/</tspan> Future ML &amp; Robotics Engineer</text>
+<g transform="translate(64 240)">
+  <rect width="30" height="6.5" fill="#ce1126"/><rect y="6.5" width="30" height="6.5" fill="#fcd116"/><rect y="13" width="30" height="6.5" fill="#006b3f"/>
+  <path d="M15 5.6l1.15 3.5h3.7l-3 2.17 1.15 3.5-3-2.17-3 2.17 1.15-3.5-3-2.17h3.7z" fill="#000"/>
+</g>
+<text x="106" y="256" font-size="16" fill="#cfe9dc" fill-opacity=".8" font-family="'Fira Code', Consolas, monospace">model.fit(curiosity, epochs=every_day)<tspan class="cur" fill="#f2b705">▌</tspan></text>
+<rect y="316" width="1200" height="4" fill="url(#bar)"/>
 </svg>
