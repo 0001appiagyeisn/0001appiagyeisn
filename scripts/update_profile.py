@@ -73,12 +73,10 @@ def practice_repo_facts(repo):
 
 
 # ── 2. Drawing the card ──────────────────────────────────────────────────────
-THEMES = {
-    "dark": dict(bg="#0d1117", border="#30363d", text="#e6edf3", muted="#8b949e",
-                 track="#21262d", green="#2ea043", gold="#f2b705", tile="#161b22"),
-    "light": dict(bg="#ffffff", border="#d0d7de", text="#1f2328", muted="#59636e",
-                  track="#eaeef2", green="#1a7f37", gold="#9a6700", tile="#f6f8fa"),
-}
+# One look for both GitHub themes: the card brings its own dark green panel (matches the banner).
+GHANA = dict(bg="url(#pbg)", border="#f2b70559", text="#ffffff", muted="#8fb3a3",
+             track="#17352b", green="#7ee2a8", gold="#f2b705", tile="#ffffff0d")
+THEMES = {"dark": GHANA, "light": GHANA}
 FONT = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 W = 840
 
@@ -106,7 +104,9 @@ def card_svg(cfg, facts, theme):
   .pulse {{ animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }}
   @keyframes pulse {{ 0%,100% {{ opacity: .35; transform: scale(1); }} 50% {{ opacity: 1; transform: scale(1.35); }} }}
 </style>""")
-    add(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}"/>')
+    add('<defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041f17"/>'
+        '<stop offset="1" stop-color="#0d1b2a"/></linearGradient></defs>')
+    add(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>')
 
     # Header
     add(f'<text x="28" y="44" font-size="22" font-weight="700" fill="{t["text"]}">{escape(j["title"])}</text>')
