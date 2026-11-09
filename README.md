@@ -5,10 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/0001appiagyeisn/ml-journey"><img src="https://img.shields.io/badge/status-learning%20daily-2ea043?style=flat-square" alt="status: learning daily"/></a>
-  <a href="https://kdwisdomenterprise.com"><img src="https://img.shields.io/badge/live%20client%20site-kdwisdomenterprise.com-f2b705?style=flat-square&logo=googlechrome&logoColor=white" alt="Live client site"/></a>
-  <img src="https://img.shields.io/badge/open%20to-freelance%20%26%20collabs-0b6b3a?style=flat-square" alt="Open to freelance and collaborations"/>
-  <img src="https://komarev.com/ghpvc/?username=0001appiagyeisn&label=profile%20views&color=0b6b3a&style=flat-square" alt="Profile views"/>
+  <a href="https://github.com/0001appiagyeisn/ml-journey"><img src="assets/badge-learning.svg" height="52" alt="Status: learning every day"/></a>
+  <a href="https://kdwisdomenterprise.com"><img src="assets/badge-client.svg" height="52" alt="Live client site: kdwisdomenterprise.com"/></a>
+  <a href="https://github.com/0001appiagyeisn/ml-journey/issues/new?title=Hi%20Kwadwo!"><img src="assets/badge-hire.svg" height="52" alt="Open to freelance and collabs"/></a>
 </p>
 
 ## 👋 About me
@@ -102,6 +101,8 @@ I learn by building. Real client projects showed me how much I enjoy solving pra
 ## 🤝 Let's connect
 
 I'm open to **freelance web projects**, **study collaborations**, and later **ML internships**. Say hi by opening an issue on [ml-journey](https://github.com/0001appiagyeisn/ml-journey/issues). I read every one.
+
+<p align="center"><a href="https://github.com/0001appiagyeisn"><img src="https://komarev.com/ghpvc/?username=0001appiagyeisn&label=PROFILE%20VIEWS&color=0b4632&style=for-the-badge" alt="Profile views"/></a></p>
 
 <p align="center"><i>Medaase (thank you) for visiting! 🙏</i></p>
 
