@@ -34,12 +34,12 @@ I learn by building. Real client projects showed me how much I enjoy solving pra
 
 #### 📓 Learning log: latest practice commits
 <!--LOG:START-->
-- `2026-11-08` · [Statistics Maths](https://github.com/0001appiagyeisn/ml-journey/commit/2785df17e6e8f31cb73634f27ead61abd31d93f4) <sub>in ml-journey</sub>
-- `2026-11-06` · [Day05:Nested loops](https://github.com/0001appiagyeisn/ml-journey/commit/5e198021dbfcd6ba6a0214e4a19b5bf006f237ab) <sub>in ml-journey</sub>
-- `2026-11-04` · [week02 statistics](https://github.com/0001appiagyeisn/ml-journey/commit/353e8e8c5fdde15b1e9dd66983a98bc75e55bf16) <sub>in ml-journey</sub>
-- `2026-11-01` · [Day 4: dictionaries](https://github.com/0001appiagyeisn/ml-journey/commit/eb5d38b70272c0853f7d0f0506ad38d33c7e960c) <sub>in ml-journey</sub>
-- `2026-10-28` · [Maths Day3: Median and Range(myself)](https://github.com/0001appiagyeisn/ml-journey/commit/d4611d50d0c53f117fc8fdf045b3f7a334bd24a6) <sub>in ml-journey</sub>
-- `2026-10-28` · [Day 3: functions(yes/no, splliting) and match](https://github.com/0001appiagyeisn/ml-journey/commit/4c4c30ae7b1421e398ee2739f47862b8b2924323) <sub>in ml-journey</sub>
+- `2026-11-12` · [Day 04 :Exceptions +loops](https://github.com/0001appiagyeisn/ml-journey/commit/1bb896007db4b21c4ca69ce51adb1ea27c876ca3) <sub>in ml-journey</sub>
+- `2026-11-12` · [Day 3:Exceptions](https://github.com/0001appiagyeisn/ml-journey/commit/b429e233baacba9c35b9a37ecf94d7b5f8d402d7) <sub>in ml-journey</sub>
+- `2026-11-12` · [Maths Stats](https://github.com/0001appiagyeisn/ml-journey/commit/f3b36df98f1a7ca282f5adf076c520fc79a121c6) <sub>in ml-journey</sub>
+- `2026-11-12` · [Day 2:Till Stretch](https://github.com/0001appiagyeisn/ml-journey/commit/45b9a2fa90859b860be9b03de171ce3ecba8761f) <sub>in ml-journey</sub>
+- `2026-11-11` · [Day 1&amp;2 :Till](https://github.com/0001appiagyeisn/ml-journey/commit/26d9a14604d2445f4cdc66a57d931163587c305c) <sub>in ml-journey</sub>
+- `2026-11-09` · [Till Mini Project](https://github.com/0001appiagyeisn/ml-journey/commit/d1d15eca1f3ebfa59fa466558b5adf3ec59dd92e) <sub>in ml-journey</sub>
 <!--LOG:END-->
 
 ## 🛠️ Tech stack
