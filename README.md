@@ -1,7 +1,7 @@
 <a href="https://github.com/0001appiagyeisn"><img src="assets/banner.svg" width="100%" alt="Kwadwo Appiagyei Gyamfi — CS student, web developer, future ML and robotics engineer"/></a>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1100&color=F2B705&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Kwadwo+%F0%9F%91%8B;Level+200+Computer+Science+%40+KTU%2C+Ghana;Freelance+web+dev%3A+real+clients%2C+real+payments;Learning+ML+%2B+Robotics%2C+one+day+at+a+time;Building+in+public+%F0%9F%9A%80" alt="Typing intro"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1100&color=22D3EE&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Kwadwo+%F0%9F%91%8B;Level+200+Computer+Science+%40+KTU%2C+Ghana;Freelance+web+dev%3A+real+clients%2C+real+payments;Learning+ML+%2B+Robotics%2C+one+day+at+a+time;Building+in+public+%F0%9F%9A%80" alt="Typing intro"/></a>
 </p>
 
 <p align="center">
@@ -70,8 +70,8 @@
 
 <p align="center">
   <a href="https://github.com/0001appiagyeisn"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=0001appiagyeisn&exclude_days=Sat&theme=github-dark-blue&hide_border=true&background=00000000&ring=F2B705&fire=2EA043&currStreakLabel=F2B705"/>
-    <img src="https://streak-stats.demolab.com?user=0001appiagyeisn&exclude_days=Sat&hide_border=true&background=00000000&ring=9A6700&fire=1A7F37&currStreakLabel=9A6700" width="70%" alt="GitHub streak"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=0001appiagyeisn&exclude_days=Sat&theme=github-dark-blue&hide_border=true&background=00000000&ring=22D3EE&fire=A78BFA&currStreakLabel=22D3EE"/>
+    <img src="https://streak-stats.demolab.com?user=0001appiagyeisn&exclude_days=Sat&hide_border=true&background=00000000&ring=0891B2&fire=7C3AED&currStreakLabel=0891B2" width="70%" alt="GitHub streak"/>
   </picture></a>
 </p>
 
@@ -93,7 +93,7 @@
 
 I'm open to **freelance web projects**, **study collaborations**, and later **ML internships**. Say hi by opening an issue on [ml-journey](https://github.com/0001appiagyeisn/ml-journey/issues). I read every one.
 
-<p align="center"><a href="https://github.com/0001appiagyeisn"><img src="https://komarev.com/ghpvc/?username=0001appiagyeisn&label=PROFILE%20VIEWS&color=0b4632&style=for-the-badge" alt="Profile views"/></a></p>
+<p align="center"><a href="https://github.com/0001appiagyeisn"><img src="https://komarev.com/ghpvc/?username=0001appiagyeisn&label=PROFILE%20VIEWS&color=0e7490&style=for-the-badge" alt="Profile views"/></a></p>
 
 <p align="center"><i>Medaase (thank you) for visiting! 🙏</i></p>
 

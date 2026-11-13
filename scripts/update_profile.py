@@ -74,10 +74,10 @@ def practice_repo_facts(repo):
 
 
 # ── 2. Drawing the card ──────────────────────────────────────────────────────
-# One look for both GitHub themes: the card brings its own dark green panel (matches the banner).
-GHANA = dict(bg="url(#pbg)", border="#f2b70559", text="#ffffff", muted="#8fb3a3",
-             track="#17352b", green="#7ee2a8", gold="#f2b705", tile="#ffffff0d")
-THEMES = {"dark": GHANA, "light": GHANA}
+# One look for both GitHub themes: the card brings its own dark navy panel (Neural Cyan).
+CARD = dict(bg="url(#pbg)", border="#22d3ee59", text="#ffffff", muted="#94a3b8",
+             track="#1e293b", green="#a78bfa", gold="#22d3ee", tile="#ffffff0d")
+THEMES = {"dark": CARD, "light": CARD}
 FONT = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 W = 840
 
@@ -105,8 +105,8 @@ def card_svg(cfg, facts, theme):
   .pulse {{ animation: pulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }}
   @keyframes pulse {{ 0%,100% {{ opacity: .35; transform: scale(1); }} 50% {{ opacity: 1; transform: scale(1.35); }} }}
 </style>""")
-    add('<defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041f17"/>'
-        '<stop offset="1" stop-color="#0d1b2a"/></linearGradient></defs>')
+    add('<defs><linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050816"/>'
+        '<stop offset="1" stop-color="#0b1533"/></linearGradient></defs>')
     add(f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>')
 
     # Header
@@ -200,15 +200,15 @@ def achievements_svg(cfg):
     rows = (len(items) + 1) // 2
     H = top + rows * ROWH + 14
     done = sum(1 for a in items if a.get("done"))
-    gold, mint, sub, muted = "#f2b705", "#7ee2a8", "#cfe9dc", "#8fb3a3"
+    gold, mint, sub, muted = "#22d3ee", "#a78bfa", "#c7d2fe", "#94a3b8"
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}" role="img" aria-label="Achievements: {done} of {len(items)} unlocked">',
-         '<defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041f17"/><stop offset="1" stop-color="#0d1b2a"/></linearGradient>'
+         '<defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050816"/><stop offset="1" stop-color="#0b1533"/></linearGradient>'
          f'<linearGradient id="ab" x1="0" x2="1"><stop offset="0" stop-color="{mint}"/><stop offset="1" stop-color="{gold}"/></linearGradient>'
          '<style>.sh { animation: sh 2.6s ease-in-out infinite } @keyframes sh { 0%,100% { opacity: .25 } 50% { opacity: .7 } }</style></defs>',
          f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="url(#ag)" stroke="{gold}" stroke-opacity=".35"/>',
          f'<text x="28" y="44" font-size="20" font-weight="800" fill="#ffffff">Achievements</text>',
          f'<text x="{W-28}" y="44" font-size="15" font-weight="700" fill="{gold}" text-anchor="end">{done} / {len(items)} unlocked</text>',
-         f'<rect x="28" y="62" width="{W-56}" height="8" rx="4" fill="#17352b"/>',
+         f'<rect x="28" y="62" width="{W-56}" height="8" rx="4" fill="#1e293b"/>',
          f'<rect x="28" y="62" width="{max(8, (W-56) * done / max(1, len(items))):.1f}" height="8" rx="4" fill="url(#ab)"/>']
     colw = (W - 56 - 24) / 2
     for i, a in enumerate(items):
@@ -217,8 +217,8 @@ def achievements_svg(cfg):
         if a.get("done"):
             o.append(f'<circle class="sh" cx="{cx:.0f}" cy="{cy}" r="21" fill="{gold}"/>')
             o.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="17" fill="{gold}"/>')
-            o.append(f'<g transform="translate({cx:.0f} {cy})" fill="#041f17"><path d="M-7 -8h14v5a7 7 0 0 1-14 0z"/>'
-                     '<path d="M-7 -6h-3a3 3 0 0 0 3 6M7 -6h3a3 3 0 0 1-3 6" fill="none" stroke="#041f17" stroke-width="1.8"/>'
+            o.append(f'<g transform="translate({cx:.0f} {cy})" fill="#050816"><path d="M-7 -8h14v5a7 7 0 0 1-14 0z"/>'
+                     '<path d="M-7 -6h-3a3 3 0 0 0 3 6M7 -6h3a3 3 0 0 1-3 6" fill="none" stroke="#050816" stroke-width="1.8"/>'
                      '<rect x="-1.5" y="3" width="3" height="4"/><rect x="-5" y="7" width="10" height="2.5" rx="1"/></g>')
             name_col, sub_col = "#ffffff", sub
         else:
@@ -231,7 +231,7 @@ def achievements_svg(cfg):
         if target and not a.get("done"):
             cur = j.get("streak_days", 0) if a.get("current") == "streak" else a.get("current", 0)
             bw = colw - 52 - 64
-            o.append(f'<rect x="{x+52:.0f}" y="{y+26}" width="{bw:.0f}" height="6" rx="3" fill="#17352b"/>')
+            o.append(f'<rect x="{x+52:.0f}" y="{y+26}" width="{bw:.0f}" height="6" rx="3" fill="#1e293b"/>')
             o.append(f'<rect x="{x+52:.0f}" y="{y+26}" width="{max(6, bw * min(1, cur / target)):.1f}" height="6" rx="3" fill="{gold}"/>')
             o.append(f'<text x="{x+52+bw+10:.0f}" y="{y+33}" font-size="12" font-weight="700" fill="{gold}">{cur}/{target}</text>')
         else:

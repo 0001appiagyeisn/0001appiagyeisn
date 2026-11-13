@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FONT = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
 MONO = "'Fira Code', Consolas, 'Courier New', monospace"
-C = dict(bg1="#041f17", bg2="#0d1b2a", gold="#f2b705", mint="#7ee2a8", sub="#cfe9dc",
-         muted="#8fb3a3", line="#9fc4b3", red="#ff7b72", white="#ffffff")
+C = dict(bg1="#050816", bg2="#0b1533", gold="#22d3ee", mint="#a78bfa", sub="#c7d2fe",
+         muted="#94a3b8", line="#7dd3fc", red="#ff7b72", white="#ffffff")
 
 PANEL = (f'<linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{C["bg1"]}"/>'
          f'<stop offset="1" stop-color="{C["bg2"]}"/></linearGradient>'
