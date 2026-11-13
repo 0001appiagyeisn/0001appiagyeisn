@@ -15,7 +15,8 @@ If the API can't be reached (e.g. running on my laptop), it just uses progress.t
 import json
 import os
 import re
-import tomllib                      # reads .toml files (built into Python 3.11+)
+import sys
+import tomllib                     # reads .toml files (built into Python 3.11+)
 import urllib.request
 from datetime import datetime, timezone
 from html import escape             # makes text safe to put inside SVG/HTML
@@ -116,7 +117,7 @@ def card_svg(cfg, facts, theme):
 
     # Stat tiles
     tiles = [(str(done), "weeks completed"), (f'{j.get("streak_days", 0)} days', "study streak"),
-             (str(commits), "practice commits"), (str(sum(1 for s in stages if s.get("status") in ("done", "now"))) + f"/{len(stages)}", "roadmap stages started")]
+             (str(commits), "commits to ml-journey"), (str(sum(1 for s in stages if s.get("status") in ("done", "now"))) + f"/{len(stages)}", "roadmap stages started")]
     tw, gap, y0 = (W - 56 - 3 * 14) / 4, 14, 88
     for i, (val, label) in enumerate(tiles):
         x = 28 + i * (tw + gap)
@@ -191,12 +192,76 @@ def learning_log(facts, max_items):
     return "\n".join(lines)
 
 
+def achievements_svg(cfg):
+    """Game-style card: unlocked achievements glow gold, locked ones show a lock and a progress bar."""
+    items = cfg.get("achievements", [])
+    j = cfg["journey"]
+    W, ROWH, top = 840, 62, 104
+    rows = (len(items) + 1) // 2
+    H = top + rows * ROWH + 14
+    done = sum(1 for a in items if a.get("done"))
+    gold, mint, sub, muted = "#f2b705", "#7ee2a8", "#cfe9dc", "#8fb3a3"
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}" role="img" aria-label="Achievements: {done} of {len(items)} unlocked">',
+         '<defs><linearGradient id="ag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#041f17"/><stop offset="1" stop-color="#0d1b2a"/></linearGradient>'
+         f'<linearGradient id="ab" x1="0" x2="1"><stop offset="0" stop-color="{mint}"/><stop offset="1" stop-color="{gold}"/></linearGradient>'
+         '<style>.sh { animation: sh 2.6s ease-in-out infinite } @keyframes sh { 0%,100% { opacity: .25 } 50% { opacity: .7 } }</style></defs>',
+         f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="14" fill="url(#ag)" stroke="{gold}" stroke-opacity=".35"/>',
+         f'<text x="28" y="44" font-size="20" font-weight="800" fill="#ffffff">Achievements</text>',
+         f'<text x="{W-28}" y="44" font-size="15" font-weight="700" fill="{gold}" text-anchor="end">{done} / {len(items)} unlocked</text>',
+         f'<rect x="28" y="62" width="{W-56}" height="8" rx="4" fill="#17352b"/>',
+         f'<rect x="28" y="62" width="{max(8, (W-56) * done / max(1, len(items))):.1f}" height="8" rx="4" fill="url(#ab)"/>']
+    colw = (W - 56 - 24) / 2
+    for i, a in enumerate(items):
+        x, y = 28 + (i % 2) * (colw + 24), top + (i // 2) * ROWH
+        cx, cy = x + 22, y + 20
+        if a.get("done"):
+            o.append(f'<circle class="sh" cx="{cx:.0f}" cy="{cy}" r="21" fill="{gold}"/>')
+            o.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="17" fill="{gold}"/>')
+            o.append(f'<g transform="translate({cx:.0f} {cy})" fill="#041f17"><path d="M-7 -8h14v5a7 7 0 0 1-14 0z"/>'
+                     '<path d="M-7 -6h-3a3 3 0 0 0 3 6M7 -6h3a3 3 0 0 1-3 6" fill="none" stroke="#041f17" stroke-width="1.8"/>'
+                     '<rect x="-1.5" y="3" width="3" height="4"/><rect x="-5" y="7" width="10" height="2.5" rx="1"/></g>')
+            name_col, sub_col = "#ffffff", sub
+        else:
+            o.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="17" fill="#ffffff" fill-opacity=".05" stroke="{muted}" stroke-opacity=".4"/>')
+            o.append(f'<g transform="translate({cx:.0f} {cy})"><rect x="-6" y="-2" width="12" height="9" rx="2" fill="{muted}"/>'
+                     f'<path d="M-3.5 -2v-3a3.5 3.5 0 0 1 7 0v3" fill="none" stroke="{muted}" stroke-width="2"/></g>')
+            name_col, sub_col = sub, muted
+        o.append(f'<text x="{x+52:.0f}" y="{y+16}" font-size="14.5" font-weight="700" fill="{name_col}">{escape(a["name"])}</text>')
+        target = a.get("target")
+        if target and not a.get("done"):
+            cur = j.get("streak_days", 0) if a.get("current") == "streak" else a.get("current", 0)
+            bw = colw - 52 - 64
+            o.append(f'<rect x="{x+52:.0f}" y="{y+26}" width="{bw:.0f}" height="6" rx="3" fill="#17352b"/>')
+            o.append(f'<rect x="{x+52:.0f}" y="{y+26}" width="{max(6, bw * min(1, cur / target)):.1f}" height="6" rx="3" fill="{gold}"/>')
+            o.append(f'<text x="{x+52+bw+10:.0f}" y="{y+33}" font-size="12" font-weight="700" fill="{gold}">{cur}/{target}</text>')
+        else:
+            o.append(f'<text x="{x+52:.0f}" y="{y+35}" font-size="12.5" fill="{sub_col}">{escape(a.get("sub", ""))}</text>')
+    o.append("</svg>")
+    return "\n".join(o)
+
+
 def replace_between(text, start, end, new):
     pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
     return pattern.sub(start + "\n" + new + "\n" + end, text)
 
 
+def ask_numbers():
+    """When I run this on my laptop, ask for today's streak and weeks done, and save them in progress.toml.
+    Press Enter to keep a number as it is. (Skipped automatically when GitHub Actions runs it.)"""
+    if not sys.stdin.isatty():
+        return
+    path = ROOT / "progress.toml"
+    text = path.read_text(encoding="utf-8")
+    for key, question in [("streak_days", "Study streak today (days)"), ("weeks_completed", "Weeks completed")]:
+        current = re.search(rf"^{key} = (\d+)", text, re.M).group(1)
+        answer = input(f"{question} [{current}]: ").strip()
+        if answer.isdigit():
+            text = re.sub(rf"^{key} = \d+", f"{key} = {answer}", text, count=1, flags=re.M)
+    path.write_text(text, encoding="utf-8")
+
+
 def main():
+    ask_numbers()
     cfg = tomllib.loads((ROOT / "progress.toml").read_text(encoding="utf-8"))
     repo = cfg["journey"].get("practice_repo", "ml-journey")
     print(f"Reading {USER}/{repo} ...")
@@ -206,6 +271,7 @@ def main():
     (ROOT / "assets").mkdir(exist_ok=True)
     for theme in THEMES:
         (ROOT / "assets" / f"progress-{theme}.svg").write_text(card_svg(cfg, facts, theme), encoding="utf-8")
+    (ROOT / "assets" / "achievements.svg").write_text(achievements_svg(cfg), encoding="utf-8")
 
     readme = ROOT / "README.md"
     text = readme.read_text(encoding="utf-8")

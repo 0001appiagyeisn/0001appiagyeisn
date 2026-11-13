@@ -78,5 +78,59 @@ level = 1
 name = "Maths for ML"
 level = 1
 
+# Achievements card. Flip done = true to unlock one (it turns gold).
+# For a locked goal with a number, give current + target and it shows a progress bar.
+# current = "streak" reads streak_days from above automatically.
+[[achievements]]
+name = "First client website"
+sub = "KD Wisdom Enterprise"
+done = true
+
+[[achievements]]
+name = "Live MoMo + card payments"
+sub = "on a real store"
+done = true
+
+[[achievements]]
+name = "Week 1 complete"
+sub = "71/71 tasks"
+done = true
+
+[[achievements]]
+name = "Week 2 complete"
+sub = "Python + statistics"
+done = true
+
+[[achievements]]
+name = "Study Squad launched"
+sub = "3 learning tracks"
+done = true
+
+[[achievements]]
+name = "30-day study streak"
+done = false
+current = "streak"
+target = 30
+
+[[achievements]]
+name = "Python + maths foundations"
+sub = "in progress"
+done = false
+
+[[achievements]]
+name = "First ML model"
+sub = "on a Ghanaian dataset"
+done = false
+
+[[achievements]]
+name = "First robot in simulation"
+sub = "ROS"
+done = false
+
+[[achievements]]
+name = "Internship"
+sub = "by Level 300"
+done = false
+
 [log]
 max_items = 6
