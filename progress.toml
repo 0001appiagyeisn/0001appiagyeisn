@@ -12,7 +12,7 @@ started = "Oct 2026"
 plan_weeks = 104            # 2-year plan
 weeks_completed = 2         # bump this when you finish a week
 current_week = 3            # auto-detected from weekNN folders in ml-journey (this is the fallback)
-streak_days = 17            # study streak from the ML Journey app — update it when you like
+streak_days = 22            # study streak from the ML Journey app — update it when you like
 focus = "Python foundations + maths for ML"
 
 # Where your practice code lives. Commits here feed the Learning Log
@@ -52,7 +52,7 @@ level = 4
 
 [[skills]]
 name = "CSS"
-level = 4
+level = 5
 
 [[skills]]
 name = "Python"
