@@ -91,7 +91,17 @@
 
 ## 🤝 Let's connect
 
-I'm open to **freelance web projects**, **study collaborations**, and later **ML internships**. Say hi by opening an issue on [ml-journey](https://github.com/0001appiagyeisn/ml-journey/issues). I read every one.
+I'm open to **freelance web projects**, **study collaborations**, and later **ML internships**. Message me on any of these:
+
+<p align="center">
+  <a href="https://www.instagram.com/appiagyeigyamfi366"><img src="assets/social/instagram.svg" height="52" alt="Instagram: @appiagyeigyamfi366"/></a>
+  <a href="https://www.tiktok.com/@appiagyeigyamfi"><img src="assets/social/tiktok.svg" height="52" alt="TikTok: @appiagyeigyamfi"/></a>
+  <a href="https://www.snapchat.com/add/shikadai9333"><img src="assets/social/snapchat.svg" height="52" alt="Snapchat: @shikadai9333"/></a>
+</p>
+<p align="center">
+  <a href="https://t.me/Shikadai1Nara"><img src="assets/social/telegram.svg" height="52" alt="Telegram: @Shikadai1Nara"/></a>
+  <a href="https://discord.com/users/975556598959329310"><img src="assets/social/discord.svg" height="52" alt="Discord: shikadainara."/></a>
+</p>
 
 <p align="center"><a href="https://github.com/0001appiagyeisn"><img src="https://komarev.com/ghpvc/?username=0001appiagyeisn&label=PROFILE%20VIEWS&color=0e7490&style=for-the-badge" alt="Profile views"/></a></p>
 
