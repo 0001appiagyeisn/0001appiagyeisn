@@ -119,16 +119,38 @@ def project_card(icon, title, status, desc, tags):
     return "\n".join(o)
 
 
-# ── 3. Divider: a thin gradient line with a tiny neural net in the middle ────
+# ── 3. Divider: a small animated neural network between the gradient lines ──
 def divider():
-    W, H = 840, 26
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="divider">
-<defs><linearGradient id="d" x1="0" x2="1"><stop offset="0" stop-color="{C["mint"]}" stop-opacity="0"/><stop offset=".5" stop-color="{C["gold"]}"/><stop offset="1" stop-color="{C["mint"]}" stop-opacity="0"/></linearGradient></defs>
-<path d="M0 13H380M460 13H840" stroke="url(#d)" stroke-width="1.5"/>
-<path d="M390 13L410 5M390 13L410 21M410 5L430 13M410 21L430 13M430 13L450 5M430 13L450 21" stroke="{C["line"]}" stroke-opacity=".6"/>
-<g fill="{C["mint"]}"><circle cx="390" cy="13" r="3"/><circle cx="410" cy="5" r="3"/><circle cx="410" cy="21" r="3"/><circle cx="450" cy="5" r="3"/><circle cx="450" cy="21" r="3"/></g>
-<circle cx="430" cy="13" r="4" fill="{C["gold"]}"/>
-</svg>'''
+    W, H, cy = 840, 84, 42
+    layers = [[cy], [cy - 24, cy + 24], [cy - 32, cy, cy + 32], [cy - 24, cy + 24], [cy]]
+    xs = [290, 350, 420, 490, 550]
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="divider">',
+         f'<defs><linearGradient id="dl" gradientUnits="userSpaceOnUse" x1="0" x2="{xs[0]-14}"><stop offset="0" stop-color="{C["mint"]}" stop-opacity="0"/>'
+         f'<stop offset="1" stop-color="{C["gold"]}"/></linearGradient>'
+         f'<linearGradient id="dr" gradientUnits="userSpaceOnUse" x1="{xs[-1]+14}" x2="{W}"><stop offset="0" stop-color="{C["gold"]}"/>'
+         f'<stop offset="1" stop-color="{C["mint"]}" stop-opacity="0"/></linearGradient>'
+         '<style>.n { animation: n 2.4s ease-in-out infinite } @keyframes n { 0%,100% { opacity: .55 } 50% { opacity: 1 } }</style></defs>',
+         f'<path d="M0 {cy}H{xs[0]-14}" stroke="url(#dl)" stroke-width="2"/>',
+         f'<path d="M{xs[-1]+14} {cy}H{W}" stroke="url(#dr)" stroke-width="2"/>']
+    edges = []
+    for i in range(len(layers) - 1):
+        for y1 in layers[i]:
+            for y2 in layers[i + 1]:
+                edges.append(f"M{xs[i]} {y1}L{xs[i+1]} {y2}")
+    o.append(f'<path d="{"".join(edges)}" stroke="{C["line"]}" stroke-opacity=".45" stroke-width="1.4" fill="none"/>')
+    for path, dur, col in [(f"M{xs[0]} {cy}L{xs[1]} {cy-24}L{xs[2]} {cy+32}L{xs[3]} {cy-24}L{xs[4]} {cy}", 2.6, C["gold"]),
+                           (f"M{xs[0]} {cy}L{xs[1]} {cy+24}L{xs[2]} {cy-32}L{xs[3]} {cy+24}L{xs[4]} {cy}", 3.2, C["mint"])]:
+        o.append(f'<circle r="3.5" fill="{col}"><animateMotion dur="{dur}s" repeatCount="indefinite" path="{path}"/></circle>')
+    k = 0
+    for x, ys in zip(xs, layers):
+        for y in ys:
+            mid = x == xs[2] and y == cy
+            col = C["gold"] if (mid or x in (xs[0], xs[-1])) else C["mint"]
+            o.append(f'<circle class="n" style="animation-delay:{k*.25:.2f}s" cx="{x}" cy="{y}" r="{8 if mid else 6}" '
+                     f'fill="{C["bg1"]}" stroke="{col}" stroke-width="3"/>')
+            k += 1
+    o.append("</svg>")
+    return "\n".join(o)
 
 
 if __name__ == "__main__":
