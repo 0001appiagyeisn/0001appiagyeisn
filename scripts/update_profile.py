@@ -187,7 +187,7 @@ def learning_log(facts, max_items):
     lines = []
     for c in items:
         msg = c["msg"] if len(c["msg"]) <= 72 else c["msg"][:69] + "..."
-        msg = msg.replace("|", "/").replace("<", "&lt;")
+        msg = msg.replace("|", "/").replace("<", "&lt;").replace("_", "\\_")  # \_ stops __x__ turning bold
         lines.append(f'- `{c["date"]}` · [{escape(msg)}]({c["url"]}) <sub>in {c["repo"]}</sub>')
     return "\n".join(lines)
 
