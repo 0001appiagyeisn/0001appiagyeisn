@@ -29,12 +29,12 @@
 <summary><b>📓 Learning log: my latest practice commits</b></summary>
 
 <!--LOG:START-->
+- `2026-11-18` · [update](https://github.com/0001appiagyeisn/ml-journey/commit/a2219d598169bfd1a3f85e789f5913fc31cb64dc) <sub>in ml-journey</sub>
+- `2026-11-18` · [Day 1:sys.argv instead of intput](https://github.com/0001appiagyeisn/ml-journey/commit/79928ea3c4c3efa0ef9b761c6c1c2c1e0342c3b2) <sub>in ml-journey</sub>
+- `2026-11-17` · [Day 7  maths ludo completed](https://github.com/0001appiagyeisn/ml-journey/commit/3a04a458b6c80da642dc5511407924d146bf3c40) <sub>in ml-journey</sub>
+- `2026-11-16` · [prime test](https://github.com/0001appiagyeisn/ml-journey/commit/fce20a8f89fe82612ec930581c4d5fe65cf12785) <sub>in ml-journey</sub>
 - `2026-11-16` · [Day 7 \_\_name\_\_ == &#x27;\_\_main\_\_&#x27; fix](https://github.com/0001appiagyeisn/ml-journey/commit/272db21195f3be1e2c260b9df13487d9d0e16367) <sub>in ml-journey</sub>
 - `2026-11-16` · [Mental maths quiz with random + and -](https://github.com/0001appiagyeisn/ml-journey/commit/8014997fd42e9c11fdacd0286b04f9e0698198ef) <sub>in ml-journey</sub>
-- `2026-11-15` · [Day 7:quiz mini project](https://github.com/0001appiagyeisn/ml-journey/commit/022addf28b2397cb3f1ceb3bd28031cec8ef1c8b) <sub>in ml-journey</sub>
-- `2026-11-13` · [Probability: rolling two dice](https://github.com/0001appiagyeisn/ml-journey/commit/efba503f3e3166eab4d4235c82b2a180496a12f5) <sub>in ml-journey</sub>
-- `2026-11-13` · [Day05: Libraries](https://github.com/0001appiagyeisn/ml-journey/commit/86ab46b4f5131f099a01b1734752f8c03e5de391) <sub>in ml-journey</sub>
-- `2026-11-12` · [Day 04 :Exceptions +loops](https://github.com/0001appiagyeisn/ml-journey/commit/1bb896007db4b21c4ca69ce51adb1ea27c876ca3) <sub>in ml-journey</sub>
 <!--LOG:END-->
 
 </details>

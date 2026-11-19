@@ -39,8 +39,8 @@
 <g transform="translate(50 310)"><rect x="-6" y="-2" width="12" height="9" rx="2" fill="#94a3b8"/><path d="M-3.5 -2v-3a3.5 3.5 0 0 1 7 0v3" fill="none" stroke="#94a3b8" stroke-width="2"/></g>
 <text x="80" y="306" font-size="14.5" font-weight="700" fill="#c7d2fe">30-day study streak</text>
 <rect x="80" y="316" width="264" height="6" rx="3" fill="#1e293b"/>
-<rect x="80" y="316" width="211.2" height="6" rx="3" fill="#22d3ee"/>
-<text x="354" y="323" font-size="12" font-weight="700" fill="#22d3ee">24/30</text>
+<rect x="80" y="316" width="246.4" height="6" rx="3" fill="#22d3ee"/>
+<text x="354" y="323" font-size="12" font-weight="700" fill="#22d3ee">28/30</text>
 <circle cx="454" cy="310" r="17" fill="#ffffff" fill-opacity=".05" stroke="#94a3b8" stroke-opacity=".4"/>
 <g transform="translate(454 310)"><rect x="-6" y="-2" width="12" height="9" rx="2" fill="#94a3b8"/><path d="M-3.5 -2v-3a3.5 3.5 0 0 1 7 0v3" fill="none" stroke="#94a3b8" stroke-width="2"/></g>
 <text x="484" y="306" font-size="14.5" font-weight="700" fill="#c7d2fe">Python + maths foundations</text>
