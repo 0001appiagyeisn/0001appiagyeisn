@@ -12,7 +12,7 @@ started = "Oct 2026"
 plan_weeks = 104            # 2-year plan
 weeks_completed = 3         # bump this when you finish a week
 current_week = 4            # auto-detected from weekNN folders in ml-journey (this is the fallback)
-streak_days = 28            # study streak from the ML Journey app — update it when you like
+streak_days = 32            # study streak from the ML Journey app — update it when you like
 focus = "Python foundations + maths for ML"
 
 # Where your practice code lives. Commits here feed the Learning Log
@@ -113,9 +113,14 @@ done = true
 
 [[achievements]]
 name = "30-day study streak"
+sub = "reached in November"
+done = true
+
+[[achievements]]
+name = "60-day study streak"
 done = false
 current = "streak"
-target = 30
+target = 60
 
 [[achievements]]
 name = "Python + maths foundations"
