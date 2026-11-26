@@ -29,12 +29,12 @@
 <summary><b>📓 Learning log: my latest practice commits</b></summary>
 
 <!--LOG:START-->
+- `2026-11-26` · [Day 7 finally..mini project will update](https://github.com/0001appiagyeisn/ml-journey/commit/b3fd0d422354f7cd338aff2a42a772964ef9eebd) <sub>in ml-journey</sub>
 - `2026-11-25` · [stats week02 added \_\_name\_\_=&#x27;\_\_main\_\_&#x27;](https://github.com/0001appiagyeisn/ml-journey/commit/ea7b36b32df9c7377610f3a62e193f568cc444cb) <sub>in ml-journey</sub>
 - `2026-11-25` · [Day05 libraries matrix added mat\_mul](https://github.com/0001appiagyeisn/ml-journey/commit/d25a95b1164348edce16031e94d398df2d76281a) <sub>in ml-journey</sub>
 - `2026-11-24` · [Day04:API&#x27;s](https://github.com/0001appiagyeisn/ml-journey/commit/7e9d00b58015fe756f46762b0d2d4d39f3f75f65) <sub>in ml-journey</sub>
 - `2026-11-24` · [matrix complete week04 day 3](https://github.com/0001appiagyeisn/ml-journey/commit/eae76ab6f190a5461f07be08231fe2f442340cd8) <sub>in ml-journey</sub>
 - `2026-11-22` · [Matrix transpose](https://github.com/0001appiagyeisn/ml-journey/commit/2e04e7d82a62501597bcd8ad7355df9084ed1603) <sub>in ml-journey</sub>
-- `2026-11-20` · [Maths Matrix multiplication](https://github.com/0001appiagyeisn/ml-journey/commit/bb06348e106e608c4836ecbc88d4da4ea39c1cdf) <sub>in ml-journey</sub>
 <!--LOG:END-->
 
 </details>
